@@ -8,12 +8,13 @@
 font-family: "Lucida Console", Monaco, monospace;
 box-sizing:border-box;
 }
-body{ 
-background-color: Gainsboro; 
+body{
+background-color: Gainsboro;
 margin:0;
 box-shadow: inset 0px -200px 200px -200px rgba(255,255,255,0.5);
 min-height: 100vh;
-color: AliceBlue; 
+color: AliceBlue;
+overflow: hidden;
 }
 main{
 text-align: center;
@@ -161,7 +162,7 @@ width: 50px;
 height: 50px;
 background-color: rgb(0,189,236);
 border-radius: 50%;
-}  
+}
 .loading:after {
 content: '';
 position: absolute;
@@ -186,6 +187,10 @@ margin: 6px 0 6px 0;
 .right a{
 font-size: 10px;
 }
+a{
+	cursor: pointer;
+	text-decoration: underline;
+}
 </style>
 </head>
 <body>
@@ -193,21 +198,21 @@ font-size: 10px;
 <span>&#128561;</span>
 <svg class="naming" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289 80"><path d="M50.545 69.226q-1 .8-2.3.7-1.2-.1-2.3-.7l-29.1-17q-.7-.4-1.3 0-.5.4-.7 1l-4.1 13.6q-.7 2.4-3.4 2.4h-4.9q-2.9 0-2.1-2.8l20-62.5q.5-1.6 1.3-2.1.9-.6 2.3-.6h7q1.4 0 2.2.6.9.5 1.4 2.1l19.1 59.8q.7 2.3-.8 3.6l-2.3 1.9zm-22.1-55.3q-.3-1.1-1-1.1t-1 1.1l-7.9 26.4q-.4 1.3-.1 2 .3.6 1 1l18.8 11q1.1.7 1.6.2.5-.6.3-1.3l-11.7-39.3zm75.807 65.3q-2.6 1.5-4.1-1.1l-5.4-9.3q-4.2 1.4-8.8 1.4-5.1 0-9.4-1.7-4.3-1.7-7.5-4.7-3.1-3-4.9-7.2-1.7-4.3-1.7-9.4v-24q0-5.1 1.7-9.3 1.8-4.3 4.9-7.3 3.2-3 7.5-4.7 4.3-1.7 9.4-1.7 5.1 0 9.4 1.7 4.3 1.7 7.4 4.7 3.2 3 4.9 7.3 1.8 4.2 1.8 9.3v24q0 5.3-1.9 9.6t-5.1 7.3l5.5 9.5q.7 1.2.3 2.3-.3 1.1-1.4 1.8l-2.6 1.5zm-26.8-40.7q-.7-1.2-.4-2.3.4-1.1 1.5-1.8l2.6-1.5q2.6-1.5 4.1 1.1l12.3 21.7q1.1-1.7 1.7-3.8.7-2.2.7-4.7v-24q0-6-3.6-10t-10.4-4q-6.8 0-10.4 4-3.6 4-3.6 10v24q0 6 3.6 10t10.4 4q2.1 0 4.1-.5l-12.6-22.2zm81.985-34.3q0-1.4.8-2.2.8-.8 2.2-.8h3.5q1.4 0 2.2.8.8.8.8 2.2v43q0 5.1-1.8 9.4-1.7 4.2-4.9 7.2-3.1 3-7.4 4.7-4.3 1.7-9.4 1.7-5.1 0-9.4-1.7-4.3-1.7-7.5-4.7-3.1-3-4.9-7.2-1.7-4.3-1.7-9.4v-43q0-1.4.8-2.2.8-.8 2.2-.8h3.5q1.4 0 2.2.8.8.8.8 2.2v43q0 6 3.6 10t10.4 4q6.8 0 10.4-4 3.6-4 3.6-10v-43zm25.96 65q-1.4 0-2.2-.8-.8-.8-.8-2.2v-62q0-1.4.8-2.2.8-.8 2.2-.8h17.5q5.5 0 10 1.9 4.6 1.8 7.8 5t4.9 7.6q1.8 4.4 1.8 9.5v20q0 5.1-1.8 9.5-1.7 4.4-4.9 7.6-3.2 3.2-7.8 5.1-4.5 1.8-10 1.8h-17.5zm32.5-44q0-3.5-1.1-6.3t-3.1-4.7q-2-2-4.8-3-2.7-1-6-1h-10q-1 0-1 1v48q0 1 1 1h10q3.3 0 6-1 2.8-1 4.8-2.9t3.1-4.7q1.1-2.8 1.1-6.4v-20zm67.61 44q-1 .8-2.3.7-1.2-.1-2.3-.7l-29.1-17q-.7-.4-1.3 0-.5.4-.7 1l-4.1 13.6q-.7 2.4-3.4 2.4h-4.9q-2.9 0-2.1-2.8l20-62.5q.5-1.6 1.3-2.1.9-.6 2.3-.6h7q1.4 0 2.2.6.9.5 1.4 2.1l19.1 59.8q.7 2.3-.8 3.6l-2.3 1.9zm-22.1-55.3q-.3-1.1-1-1.1t-1 1.1l-7.9 26.4q-.4 1.3-.1 2 .3.6 1 1l18.8 11q1.1.7 1.6.2.5-.6.3-1.3l-11.7-39.3z"/></svg>
 <div class="right">
-<!-- <div class="username"><h4>Renato</h4></div> -->
-<div class="logout"><a href="http://192.168.4.1/login?DISCONNECT=YES">Logout</a></div>
+<div class="username"><h4 id="js-nav_name"></h4></div>
+<div class="logout"><a onclick="showLogin()">Logout</a></div>
 </div>
 </nav>
 <main>
 
 
 <section class="users_container">
-<div data-user="http://192.168.4.2" class="user" onclick="requestHelp(this);">
+<div class="user" onclick="requestHelp(this);">
 <h2>Renato de Leão</h2>
 </div>
-<div data-user="http://192.168.4.3" class="user" onclick="requestHelp(this);">
-<h2>Zé Ribeiro</h2>
+<div class="user" onclick="requestHelp(this);">
+<h2>José Ribeiro</h2>
 </div>
-<div data-user="http://192.168.4.4" class="user" onclick="requestHelp(this);">
+<div class="user" onclick="requestHelp(this);">
 <h2>Rafael Jegundo</h2>
 </section>
 <section class="popup" id="js-requestHelp">
@@ -219,35 +224,34 @@ font-size: 10px;
 </section>
 
 
-<!-- <section class="login popup">
-<form action='http://192.168.4.1/login' method='POST'>
-<input type='text' name='USERNAME' placeholder='Insert Full Name' required=""><br>
-<input type='submit' name='SUBMIT' value='ENTER'>
-</form>
-</section> -->
+<section class="login popup" id="js-login_modal">
+<div>
+<input id="js-username" type='text' name='USERNAME' placeholder='Insert Full Name' required=""><br>
+<input type='submit' name='SUBMIT' value='ENTER' onclick="closeLogin()">
+</div>
+</section>
 
 
 </main>
 </body>
 <script type="text/javascript">
-var currentHelper;
 function closePopup(){
 	var requestHelpPopup = document.getElementById("js-requestHelp");
 	requestHelpPopup.style.display = "none";
-	var IP = currentHelper.dataset.user;
-	var xhttp = new XMLHttpRequest();
-	xhttp.open("GET", IP + "/cancel?user=" + currentHelper.querySelector("h2").innerHTML, true);
-	xhttp.send();
-	currentHelper = null;
+}
+function closeLogin(){
+	var login = document.getElementById("js-login_modal");
+	login.style.display = "none";
+	document.getElementById('js-nav_name').innerText = document.getElementById("js-username").value;
+}
+function showLogin(){
+	var login = document.getElementById("js-login_modal");
+	login.style.display = "flex";
+	document.getElementById('js-nav_name').innerText = "";
 }
 function requestHelp(object){
-	currentHelper = object
-	document.getElementById("js-userHelper").innerText = currentHelper.querySelector("h2").innerHTML;
-	var IP = currentHelper.dataset.user;
+	document.getElementById("js-userHelper").innerText = object.querySelector("h2").innerHTML;
 	document.getElementById("js-requestHelp").style.display = "flex";
-	var xhttp = new XMLHttpRequest();
-	xhttp.open("GET", IP + "/help", true);
-	xhttp.send();
 }
 </script>
 </html>

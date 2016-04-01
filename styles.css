@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    background: rgb(20,20,20);
+    color: white;
+    font-family: 'Karla', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.main{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+.main > *{
+    z-index: 1;
+}
+img{
+    width: auto;
+    height: 100vh;
+    opacity: .4;
+}
+.cover{
+    background-image: url("imgs/image1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: .8;
+}
+.logo{
+    fill:white;
+    height: 100px;
+    width: auto;
+}
+.background{
+    position: absolute;
+}
+
+.about{
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+.about--top{
+  box-shadow: 0px -40px 60px 10px rgba(20,20,20,.8);
+}
+.about--laptop{
+  top: 200vh;
+  height: 100vh;
+}
+.copy{
+  width: 40%;
+  font-size: 1.2em;
+  text-align: left;
+  line-height: 1.6em;
+  margin-left: 15%;
+  margin-top: 15%;
+}
+iframe{
+  border: none;
+}
+#js-start{
+  position: absolute;
+  top: 50vh;
+}
+.laptop{
+  margin-top: -12vh;
+}
+.aquda{
+  position: absolute;;
+  height: 150px;
+  width: 90px;
+  left: 65%;
+  top: 35vh;
+}
+.aquda .back{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: gray;
+  border-radius: 8px;
+}
+.aquda .front{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 56%;
+  width: 100%;
+  background: lightgray;
+  border-radius: 8px;
+  box-shadow: 0px 20px 20px -10px rgba(0,0,0,.6);
+  z-index: 9999;
+}
+
+.aquda .front .screen{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  height: 32%;
+  width: 56%;
+  background: black;
+  border-radius: 2px;
+}
+
+footer{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: .4;
+}

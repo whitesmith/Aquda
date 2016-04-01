@@ -1,2 +1,0 @@
-# Aquda
-aquda.me
