@@ -60,6 +60,45 @@ img{
   top: 200vh;
   height: 100vh;
 }
+.about--form{
+  top: 300vh;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: left;
+  align-content: center;
+}
+.input--text{
+  color: whitesmoke;
+  border: 0;
+  border-bottom: 2px solid whitesmoke;
+  background: transparent;
+  font-size: 1.2em;
+  display: block;
+  width: 30vw;
+  margin-top: 2.5em;
+}
+
+.input--submit{
+  background: whitesmoke;
+  color: darkgray;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  display: block;
+  width: 30vw;
+  margin-top: 3em;
+  height: 40px;
+  cursor: pointer;
+}
+.input--submit:hover{
+  background: lightgray;
+  color: slategray;
+}
+.sign_form{
+  margin-top: 10vh;
+}
 .copy{
   width: 40%;
   font-size: 1.2em;
@@ -123,4 +162,14 @@ footer{
   left: 50%;
   transform: translate(-50%, 0);
   opacity: .4;
+}
+
+.github-fork-ribbon-wrapper{
+  width: 150px;height: 150px;position: fixed;overflow: hidden;top: 0;z-index: 9999;pointer-events: none;right: 0;opacity: .8;
+}
+.github-fork-ribbon{
+  position: absolute;padding: 2px 0;background-color: #333;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);-moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);z-index: 9999;pointer-events: auto;top: 42px;right: -43px;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);
+}
+.github-fork-ribbon a{
+  font: 700 13px "Helvetica Neue", Helvetica, Arial, sans-serif;color: #fff;text-decoration: none;text-shadow: 0 -1px rgba(0, 0, 0, 0.5);text-align: center;width: 200px;line-height: 20px;display: inline-block;padding: 2px 0;border-width: 1px 0;border-style: dotted;border-color: rgba(255, 255, 255, 0.7);
 }
