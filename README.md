@@ -4,7 +4,7 @@ Wether your company uses slack, messenger, emails or still lives in the Stone Ag
 
 That’s where AQUDA enters the scene! 
 
-AQUDA is a group of devices that are connected to each othera, and they don't require an internet connection. Each person has their own AQUDA, so that you can only get help if you are prepare to give it too.
+AQUDA is a group of devices that are connected to each other, and they don't require an internet connection. Each person has their own AQUDA, so that you can only get help if you are prepare to give it too.
 
 
 Check out the live demo at [aquda.me](http://aquda.me).
