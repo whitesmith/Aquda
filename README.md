@@ -1,4 +1,4 @@
-# AQUDA
+<h1><img src="http://whitesmith.github.io/Aquda/imgs/aquda_logo.svg" alt="AQUDA" width="50%"></h1>
 
 Wether your company uses slack, messenger, emails or still lives in the Stone Age, you are going to have those times where you really need the help from one of your co-workers. They may be in the mood for helping, but most of the times they are working on their own projects, and even though their intention might be to help you, the truth is they probably forgot about you...
 
